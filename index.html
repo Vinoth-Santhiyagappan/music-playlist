@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vinoth's Playlist</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #00b04f, #0a3d22);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .player {
+            width: 280px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .playlist-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .cover img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .details {
+            margin: 15px 0;
+        }
+
+        .details h2 {
+            font-size: 18px;
+        }
+
+        .details p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .progress {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .progress input {
+            flex: 1;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .controls button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .controls .play {
+            background: #4b3cff;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+    <div class="player">
+
+
+        <div class="playlist-title">Vinoth's Playlist</div>
+
+        <div class="cover">
+            <img src="download (1).jpg" alt="Album Cover">
+        </div>
+
+        <div class="details">
+            <h2>Aaruyire</h2>
+            <p>A.R. Rahman</p>
+        </div>
+
+        <div class="progress">
+            <span>0:45</span>
+            <input type="range" value="30">
+            <span>4:12</span>
+        </div>
+
+        <div class="controls">
+            <button>⏮</button>
+            <button class="play">▶</button>
+            <button>⏭</button>
+        </div>
+    </div>
+
+</body>
+</html>
